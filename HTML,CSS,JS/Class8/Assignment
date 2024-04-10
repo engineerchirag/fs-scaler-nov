@@ -1,0 +1,131 @@
+1. Q1. Class-8: MCQ1. JS Data type
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Which of the following is a valid JavaScript data type?
+
+
+undefined
+NaN
+infinity
+All of the above
+
+Undefined is a data type in JavaScript which represents a value that is not assigned.
+
+
+
+2. Q2. Class-8: MCQ2. Array Declaration
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Which of the following is the correct way to declare an array in JavaScript?
+
+let myArray = ["red", "green", "blue"];
+let myArray = {"red", "green", "blue"};
+let myArray = ("red", "green", "blue");
+let myArray = {"red":1, "green":2, "blue":3};
+
+In JavaScript, arrays are declared using square brackets [].
+
+3. Q3. Class-8: MCQ4. Object Declaration
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Which of the following is the correct way to declare an object in JavaScript?
+
+let myObj = {name: "John", age: 30};
+let myObj = ["John", 30];
+let myObj = "John", 30;
+let myObj = {"John", 30};
+
+In JavaScript, objects are declared using curly braces {}.
+
+4. Q4. Class-8: MCQ5. Find the output
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is the output of the following code?
+
+let myObj = {name: "John", age: 30};
+
+console.log(myObj.name);
+
+
+John
+age
+30
+undefined
+
+In JavaScript, you can access the value of a property of an object using the dot notation. In this code, myObj.name refers to the value of the name property of the myObj object, which is “John”.
+
+
+
+Q5. Class-8: MCQ6. Defining Functions
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Which of the following is a valid way to define a function in JavaScript?
+
+You have already attempted this problem, to see your original answer, Click Here . However you can re attempt this problem but your score will not be revised
+
+function myFunction() {console.log("Hello");}
+let myFunction = function() {console.log("Hello");}
+myFunction = () => {console.log("Hello");}
+All of the above - Correct
+
+In JavaScript, functions can be defined using the function keyword, function expressions, or arrow functions.
+
+
+
+Q6. Class-8: MCQ7. Find the output
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is the output of the following code?
+
+function myFunction(x, y) {
+
+return x + y;
+
+}
+
+console.log(myFunction(3, 4));
+
+You have already attempted this problem, to see your original answer, Click Here . However you can re attempt this problem but your score will not be revised
+
+3
+4
+7
+undefined
+
+This code defines a function called myFunction that takes two parameters and returns their sum. When myFunction(3, 4) is called, it returns 7, which is then printed to the console.
+
+
+
+Q7. Class-8: MCQ3. Find the output
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+let myArray = ["apple", "banana", "cherry"];
+
+myArray.push("orange");
+
+console.log(myArray);
+
+You have already attempted this problem, to see your original answer, Click Here . However you can re attempt this problem but your score will not be revised
+
+["apple", "banana", "cherry"]
+["apple", "banana", "cherry", "orange"]
+["orange", "apple", "banana", "cherry"]
+["apple", "banana", "orange", "cherry"]
+
+The push() method adds an element to the end of an array. In this code, “orange” is pushed to the end of the array, so the output is [“apple”, “banana”, “orange”, “cherry”].
+
+
