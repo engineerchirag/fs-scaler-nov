@@ -1,0 +1,199 @@
+Q1. Class-10: MCQ1. Functional Programming
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is functional programming in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A way of programming where functions are treated as first-class citizens.
+A way of programming where only loops and conditionals are used.
+A way of programming where only object-oriented principles are used.
+A way of programming where functions are not used at all.
+
+Functional programming in JavaScript refers to a **way of programming where functions are treated as first-class citizens**. In this paradigm, functions can be assigned to variables, passed as arguments to other functions, and returned from other functions. It emphasizes immutability, pure functions, and declarative code. Unlike traditional imperative programming, which relies heavily on loops and conditionals, functional programming focuses on composing functions to achieve desired outcomes. So, the correct answer is the first option: **A way of programming where functions are treated as first-class citizens**.
+
+
+Q2. Class-10: MCQ2. Pure Function in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is a pure function in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A function that has no return value.
+A function that modifies its arguments or external state.
+A function that has a return value and does not modify its arguments or external state.
+A function that has no arguments.
+
+A **pure function** in JavaScript is a function that **always produces the same output for the same input** and has **no side effects**. In other words, pure functions do not modify state outside their scope, such as modifying global variables, changing the state of objects passed as arguments, or performing I/O operations ¹²³. 
+
+To summarize, a pure function:
+- Returns the same result for the same input.
+- Does not depend on external state or data changes.
+- Does not produce any observable side effects.
+
+Therefore, the correct answer is the third option: **A function that has a return value and does not modify its arguments or external state**.
+
+Source: Conversation with Bing, 10/4/2024
+(1) Pure Functions in JavaScript - GeeksforGeeks. https://www.geeksforgeeks.org/pure-functions-in-javascript/.
+(2) What are Pure Functions in JavaScript - GeeksforGeeks. https://www.geeksforgeeks.org/what-are-pure-functions-in-javascript/.
+(3) Pure Functions in Javascript. https://onjsdev.com/article/pure-functions-in-javascript.
+(4) Master the JavaScript Interview: What is a Pure Function?. https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976.
+
+
+
+
+Q3. Class-10: MCQ3. Side Effects in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What are side effects in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+Changes to external state caused by a function.
+Changes to the arguments passed to a function.
+Changes to the return value of a function.
+Changes to the execution context of a function.
+
+
+Q4. Class-10: MCQ4. Higher order functions
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is a higher-order function in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A function that returns another function.
+A function that takes another function as an argument.
+A function that modifies the execution context of another function.
+A function that has no arguments.
+
+A **higher-order function** in JavaScript is a function that **can accept other functions as arguments, return functions, or both**. These functions enable **abstraction**, **composition**, and the creation of more flexible and reusable code. Let's break down the options:
+
+1. **A function that returns another function**: This is indeed a characteristic of higher-order functions. They can generate and return new functions dynamically.
+
+2. **A function that takes another function as an argument**: Correct! Higher-order functions often accept other functions as arguments, allowing for customizable behavior.
+
+3. **A function that modifies the execution context of another function**: While execution context manipulation is a concept in JavaScript, it's not the defining feature of higher-order functions.
+
+4. **A function that has no arguments**: Higher-order functions typically take at least one argument (another function).
+
+Therefore, the correct answer is the second option: **A function that takes another function as an argument**⁹.
+
+Source: Conversation with Bing, 10/4/2024
+(1) JavaScript Higher Order Functions - GeeksforGeeks. https://www.geeksforgeeks.org/javascript-higher-order-functions/.
+(2) undefined. https://www.geeksforgeeks.org/pure-functions-in-javascript/.
+(3) undefined. https://www.geeksforgeeks.org/what-are-pure-functions-in-javascript/.
+(4) undefined. https://onjsdev.com/article/pure-functions-in-javascript.
+(5) undefined. https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976.
+(6) undefined. https://thejs.dev/jmitchell/what-are-side-effects-and-what-you-can-do-about-them-jws/.
+(7) undefined. https://monsterlessons-academy.com/posts/what-are-side-effects-in-javascript-what-are-pure-functions.
+(8) undefined. https://dev.to/vonheikemen/dealing-with-side-effects-and-pure-functions-in-javascript-16mg.
+(9) undefined. https://blog.greenroots.info/what-are-pure-functions-and-side-effects-in-javascript.
+(10) Higher-Order Functions in JavaScript. https://blog.javascripttoday.com/blog/higher-order-functions-in-javascript/.
+(11) What are Higher-Order Functions in JavaScript? - Dmitri Pavlutin Blog. https://dmitripavlutin.com/javascript-higher-order-functions/.
+(12) Higher Order Functions in JavaScript – Reach New Heights in Your JS Code. https://www.freecodecamp.org/news/higher-order-functions-in-javascript-examples/.
+
+
+Q5. Class-10: MCQ5. Map function in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is the map function in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A function that filters an array based on a given condition.
+A function that reduces an array to a single value based on a given function.
+A function that applies a given function to each element of an array and returns a new array.
+A function that sorts an array in ascending order.
+
+The **map function** in JavaScript is a higher-order function that **applies a given function to each element of an array and returns a new array**. It transforms each element of the original array by applying the specified function to it. The resulting array has the same length as the original but contains the modified values based on the applied function. So, the correct answer is the third option: **A function that applies a given function to each element of an array and returns a new array**.
+
+Source: Conversation with Bing, 10/4/2024
+(1) undefined. https://www.geeksforgeeks.org/pure-functions-in-javascript/.
+(2) undefined. https://www.geeksforgeeks.org/what-are-pure-functions-in-javascript/.
+(3) undefined. https://onjsdev.com/article/pure-functions-in-javascript.
+(4) undefined. https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976.
+(5) undefined. https://thejs.dev/jmitchell/what-are-side-effects-and-what-you-can-do-about-them-jws/.
+(6) undefined. https://monsterlessons-academy.com/posts/what-are-side-effects-in-javascript-what-are-pure-functions.
+(7) undefined. https://dev.to/vonheikemen/dealing-with-side-effects-and-pure-functions-in-javascript-16mg.
+(8) undefined. https://blog.greenroots.info/what-are-pure-functions-and-side-effects-in-javascript.
+(9) undefined. https://www.geeksforgeeks.org/javascript-higher-order-functions/.
+(10) undefined. https://blog.javascripttoday.com/blog/higher-order-functions-in-javascript/.
+(11) undefined. https://dmitripavlutin.com/javascript-higher-order-functions/.
+(12) undefined. https://www.freecodecamp.org/news/higher-order-functions-in-javascript-examples/.
+
+
+Q6. Class-10: MCQ6. Filter function in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is the filter function in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A function that applies a given function to each element of an array and returns a new array.
+A function that filters an array based on a given condition and returns a new array.
+A function that reduces an array to a single value based on a given function.
+A function that sorts an array in descending order.
+The **filter function** in JavaScript is a higher-order function that **filters an array based on a given condition and returns a new array**. It iterates through each element of the original array, applies the specified condition (usually expressed as a callback function), and includes only the elements that satisfy that condition in the resulting array. Essentially, it creates a new array containing a subset of the original array based on the provided filtering criteria. So, the correct answer is the second option: **A function that filters an array based on a given condition and returns a new array**.
+
+Source: Conversation with Bing, 10/4/2024
+(1) undefined. https://www.geeksforgeeks.org/pure-functions-in-javascript/.
+(2) undefined. https://www.geeksforgeeks.org/what-are-pure-functions-in-javascript/.
+(3) undefined. https://onjsdev.com/article/pure-functions-in-javascript.
+(4) undefined. https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976.
+(5) undefined. https://thejs.dev/jmitchell/what-are-side-effects-and-what-you-can-do-about-them-jws/.
+(6) undefined. https://monsterlessons-academy.com/posts/what-are-side-effects-in-javascript-what-are-pure-functions.
+(7) undefined. https://dev.to/vonheikemen/dealing-with-side-effects-and-pure-functions-in-javascript-16mg.
+(8) undefined. https://blog.greenroots.info/what-are-pure-functions-and-side-effects-in-javascript.
+(9) undefined. https://www.geeksforgeeks.org/javascript-higher-order-functions/.
+(10) undefined. https://blog.javascripttoday.com/blog/higher-order-functions-in-javascript/.
+(11) undefined. https://dmitripavlutin.com/javascript-higher-order-functions/.
+(12) undefined. https://www.freecodecamp.org/news/higher-order-functions-in-javascript-examples/.
+
+
+Q7. Class-10: MCQ7. Reduce function in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is the reduce function in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A function that applies a given function to each element of an array and returns a new array.
+A function that filters an array based on a given condition and returns a new array.
+A function that reduces an array to a single value based on a given function.
+A function that sorts an array in ascending order.
+
+The **reduce function** in JavaScript is a higher-order function that **reduces an array to a single value based on a given function**. It iterates through the elements of the array, accumulating a result by applying the specified function to each element and maintaining an intermediate value. The final output is a single value obtained by combining all the elements according to the provided logic. Essentially, it "reduces" the array to a summary value.
+
+For example, you can use `reduce` to find the sum of all elements in an array, calculate the average, concatenate strings, or perform other custom aggregations.
+
+So, the correct answer is the third option: **A function that reduces an array to a single value based on a given function**.
+
+Source: Conversation with Bing, 10/4/2024
+(1) undefined. https://www.geeksforgeeks.org/pure-functions-in-javascript/.
+(2) undefined. https://www.geeksforgeeks.org/what-are-pure-functions-in-javascript/.
+(3) undefined. https://onjsdev.com/article/pure-functions-in-javascript.
+(4) undefined. https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976.
+(5) undefined. https://thejs.dev/jmitchell/what-are-side-effects-and-what-you-can-do-about-them-jws/.
+(6) undefined. https://monsterlessons-academy.com/posts/what-are-side-effects-in-javascript-what-are-pure-functions.
+(7) undefined. https://dev.to/vonheikemen/dealing-with-side-effects-and-pure-functions-in-javascript-16mg.
+(8) undefined. https://blog.greenroots.info/what-are-pure-functions-and-side-effects-in-javascript.
+(9) undefined. https://www.geeksforgeeks.org/javascript-higher-order-functions/.
+(10) undefined. https://blog.javascripttoday.com/blog/higher-order-functions-in-javascript/.
+(11) undefined. https://dmitripavlutin.com/javascript-higher-order-functions/.
+(12) undefined. https://www.freecodecamp.org/news/higher-order-functions-in-javascript-examples/.
