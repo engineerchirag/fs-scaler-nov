@@ -1,0 +1,97 @@
+
+
+
+Q2. Class-9: MCQ2. Destructuring in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is destructuring in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A way to break down an array or object into individual variables.
+A way to convert a string to an array.
+A way to reverse the order of an array.
+A way to access a property of an object using dot notation.
+
+The correct answer is:
+
+A way to break down an array or object into individual variables.
+
+
+Q3. Class-9: MCQ3. Hoisting in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is hoisting in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+A way to move all variable and function declarations to the top of their respective scopes.
+A way to delete variables and functions from memory.
+A way to stop code execution.
+A way to assign values to variables.
+
+Q4. Class-9: MCQ4. Execution Context in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is the execution context in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+The environment in which JavaScript code is executed.
+The process of interpreting JavaScript code by the browser.
+The process of compiling JavaScript code into machine code.
+The process of optimizing JavaScript code for performance.
+
+
+Q5. Class-9: MCQ5. Primitive data types
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Which of the following is a primitive data type in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+Object
+Array
+Number
+Function
+Primitive data types:
+
+Primitive data types in JavaScript are basic data types that are not objects and do not have methods. They are immutable.
+The options provided are:
+Object: Not a primitive data type, as objects are complex data structures.
+Array: Not a primitive data type, as arrays are specialized objects.
+Number: A primitive data type representing numeric values.
+Function: Not a primitive data type, as functions are objects in JavaScript.
+The correct answer is "Number," as it is one of the primitive data types in JavaScript.
+
+Q7. Class-9: MCQ7. Temporal Dead Zone in JS
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+What is the Temporal Dead Zone (TDZ) in JavaScript?
+
+Choose the correct answer from below:
+Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+The period of time during which a variable is being hoisted.
+The period of time during which a variable is being assigned a value.
+The period of time during which a variable cannot be accessed due to being in an unintialized state.
+The period of time during which a variable cannot be accessed due to being out of scope.
+
+The correct answer is:
+
+The period of time during which a variable cannot be accessed due to being in an uninitialized state.
+
+Explanation:
+- The Temporal Dead Zone (TDZ) refers to the period between the creation of a variable and its initialization with a value.
+- During this period, attempting to access the variable will result in a ReferenceError, as the variable exists but has not been assigned a value yet.
+- Once the variable is initialized, it exits the TDZ, and its value can be accessed normally.
+- This mechanism is a safeguard in JavaScript to catch potential errors related to accessing variables before they are properly initialized.
