@@ -1,0 +1,157 @@
+Q1. DOM Q1: Adding Hello's
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Raw Problem
+Write a program in JS to do the below mentioned task:
+
+When the button is clicked, append a <div> element, containing inner text 'Hello', as Child for the <body> element.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <button id="helloButton">Say Hello</button>
+    <script>
+        // Get the button element
+        const button = document.getElementById("helloButton");
+
+        // Add a click event listener to the button
+        button.addEventListener("click", () => {
+            // Create a new <div> element
+            const newDiv = document.createElement("div");
+            newDiv.innerText = "Hello"; // Set the inner text of the <div> to "Hello"
+
+            // Append the new <div> as a child of the <body> element
+            document.body.appendChild(newDiv);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+Q2. DOM Q2: Fix the list
+Solved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Raw Problem
+Write a program in JavaScript to do the below-mentioned task:
+
+Fix the list of elements by adding the missing element using DOM methods like querySelectorAll and insertBefore.
+
+Note:
+
+Add the missing number to the list without changing the HTML part of the code.
+
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+</body>
+
+<script>
+    // Write your JS program here ====
+    const listItems = document.querySelectorAll('ul li');
+
+    const missingNumber = document.createElement('li');
+    missingNumber.textContent = '7';
+
+    const number8 = listItems[6];
+
+    number8.parentNode.insertBefore(missingNumber , number8);
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+ASSIGNMENT PROBLEM
+Q1. DOM Q3: Correcting the equation
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Raw Problem
+Write a program in JavaScript to do the below-mentioned task:
+Fix the mathematical problem. '2 + 2 = 22' to '2 + 2 = 4'
+NOTE:
+Using JS only change the innerText property of the target element containing the equation
+
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p id ="equation"> 2 + 2 = 22 </p>
+</body>
+<script>
+    // Write your JS program here ====
+    const equationElement = document.getElementById("equation");
+
+    equationElement.innerText = "2 + 2 = 4" ;
+
+
+</script>
+
+</html>
