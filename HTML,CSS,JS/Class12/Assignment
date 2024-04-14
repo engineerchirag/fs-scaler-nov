@@ -17,6 +17,90 @@ Note:
 Don't make any changes to the HTML and CSS.
 
 
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 5rem;
+        }
+
+        .blue {
+            background-color: blue;
+            box-shadow: 0px 0px 6px 5px;
+        }
+
+        .green {
+            background-color: green;
+            box-shadow: 0px 0px 6px 5px;
+        }
+
+        .red {
+            background-color: red;
+            box-shadow: 0px 0px 6px 5px;
+        }
+
+        .card {
+            border: 1px solid;
+            height: 10rem;
+            width: 10rem;
+            margin: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card" data-color="blue"></div>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="blue"></div>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="blue"></div>
+    <div class="card" data-color="green"></div>
+    <div class="card" data-color="blue"></div>
+    <div class="card" data-color="green"></div>
+    <div class="card" data-color="blue"></div>
+
+</body>
+
+<script>
+    // Write your JS Program here
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+    card.addEventListener('dblclick', () => {
+    const color = card.getAttribute('data-color');
+    card.classList.add(color);
+    card.setAttribute('data-color', 'used');
+        });
+    });
+</script>
+</html>
+
+
+
+
 
 Sure, I'd be happy to explain each line of the JavaScript code:
 
@@ -71,9 +155,264 @@ I
 
 
 
+Q2. DOM Q5: Mouse in the jail
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Raw Problem
+Write a JavaScript program to perform the following task:
+
+You are given an empty cell.
+Whenever the mouse enters the cell,
+a jail should be drawn over it.
+And it should be removed once it leaves.
+
+URL of the image: https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/055/850/original/jail.jpg?1699030242
+
+
+NOTE :
+Here cursor is referred to as the mouse and the box as the empty cell.
+To draw the jail:
+Use the background image provided and set it as the background for the cell when the mouse enters the cell.
+
+Use the below-mentioned method to set the image as background:
+element.style.background = url(image_src)
+
+
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .cell {
+            border: 1px solid;
+            margin: auto;
+            margin-top: 10rem;
+            height: 20rem;
+            width: 20rem;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cell"></div>
+
+</body>
+<script>
+    // Write your JS program here
+</script>
+</html>
+
+
+
+Sure, I'd be happy to explain each line of the JavaScript code:
+
+```javascript
+const cell = document.querySelector('.cell');
+```
+This line selects the first element in the document with the class name 'cell' and stores it in the `cell` variable.
+
+```javascript
+const imageUrl = 'https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/055/850/original/jail.jpg?1699030242';
+```
+This line stores the URL of the jail image in the `imageUrl` variable.
+
+```javascript
+cell.addEventListener('mouseenter', () => {
+```
+This line adds an event listener to the `cell` element. The event listener waits for a 'mouseenter' event, which occurs when the mouse pointer is moved onto the `cell` element. When a 'mouseenter' event occurs, it executes the provided function.
+
+```javascript
+    cell.style.background = `url(${imageUrl})`;
+```
+This line sets the background of the `cell` element to the jail image. It uses a template literal (the backticks) to insert the `imageUrl` variable into the `url()` function, which is the value assigned to the `background` property.
+
+```javascript
+});
+```
+This line closes the function provided to the 'mouseenter' event listener.
+
+```javascript
+cell.addEventListener('mouseleave', () => {
+```
+This line adds another event listener to the `cell` element. This event listener waits for a 'mouseleave' event, which occurs when the mouse pointer is moved off of the `cell` element. When a 'mouseleave' event occurs, it executes the provided function.
+
+```javascript
+    cell.style.background = '';
+```
+This line removes the background image from the `cell` element by setting the `background` property to an empty string.
+
+```javascript
+});
+```
+This line closes the function provided to the 'mouseleave' event listener.
 
 
 
 
+
+
+#ADDITIONAL PROBLEM
+
+
+Q1. DOM Q8: Making a weird button
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Raw Problem
+A button of class 'double' exists inside the parent div of id '#doubleHolder' in the HTML.
+Write a JavaScript program such that whenever the button is clicked :
+
+1. It is destroyed (removed from the parent div)
+2. Two new buttons are created in its place. (inside the same parent div)
+3. The new buttons should also inherit the same feature. Making it a recursive feature.
+
+Hint: Use the class of 'double' and add the functionality to all the buttons having a class of 'double'
+i.e., All new buttons should also have 'double' as class
+
+Refer to the test cases to further understand the requirements to submit the problem
+
+
+
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="doubleHolder">
+        <button class="double">double</button>
+    </div>
+
+    <script>
+        // Write your JS program here =========
+    </script>
+</body>
+
+</html>
+
+
+
+
+Absolutely, I'd be happy to explain each line of the JavaScript code:
+
+```javascript
+document.addEventListener('DOMContentLoaded', (event) => {
+```
+This line adds an event listener to the `document` object. This event listener waits for the 'DOMContentLoaded' event, which is fired when the initial HTML document has been completely loaded and parsed. When this event occurs, it executes the provided function.
+
+```javascript
+    function createButton() {
+```
+This line defines a new function named `createButton`.
+
+```javascript
+        const btn = document.createElement('button');
+```
+This line creates a new button element and stores it in the `btn` variable.
+
+```javascript
+        btn.className = 'double';
+```
+This line sets the class of the new button to 'double'.
+
+```javascript
+        btn.textContent = 'double';
+```
+This line sets the text content of the new button to 'double'.
+
+```javascript
+        btn.addEventListener('click', handleClick);
+```
+This line adds a 'click' event listener to the new button. When the button is clicked, it will call the `handleClick` function.
+
+```javascript
+        return btn;
+```
+This line returns the new button from the `createButton` function.
+
+```javascript
+    }
+```
+This line closes the `createButton` function.
+
+```javascript
+    function handleClick(event) {
+```
+This line defines a new function named `handleClick`. This function will be called when a button is clicked.
+
+```javascript
+        const parent = event.target.parentNode;
+```
+This line gets the parent element of the clicked button and stores it in the `parent` variable.
+
+```javascript
+        parent.removeChild(event.target);
+```
+This line removes the clicked button from its parent element.
+
+```javascript
+        parent.appendChild(createButton());
+        parent.appendChild(createButton());
+```
+These lines create two new buttons by calling the `createButton` function and append them to the parent element of the clicked button.
+
+```javascript
+    }
+```
+This line closes the `handleClick` function.
+
+```javascript
+    const doubleHolder = document.querySelector('#doubleHolder');
+```
+This line selects the element with the id 'doubleHolder' and stores it in the `doubleHolder` variable.
+
+```javascript
+    const button = doubleHolder.querySelector('.double');
+```
+This line selects the first element with the class 'double' inside the 'doubleHolder' element and stores it in the `button` variable.
+
+```javascript
+    button.addEventListener('click', handleClick);
+```
+This line adds a 'click' event listener to the button. When the button is clicked, it will call the `handleClick` function.
+
+```javascript
+});
+```
+This line closes the function provided to the 'DOMContentLoaded' event listener.
+
+I hope this helps! Let me know if you have any other questions. 😊
 
 
