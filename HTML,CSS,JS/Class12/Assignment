@@ -1,0 +1,79 @@
+Q1. DOM Q4: Playing with colors
+Unsolved
+feature icon
+Using hints except Complete Solution is Penalty free now
+Use Hint
+Raw Problem
+Problem Description:
+
+Given in the HTML are cards with different data-color attributes along with some regular CSS.
+
+Write a script in JavaScript which:
+1. fetches the data-color attribute of the card by double clicking on them
+2. and attaches the fetched value (a color) as a class to that card.
+3. Also changes the data-color attribute to "used".
+
+Note:
+Don't make any changes to the HTML and CSS.
+
+
+
+Sure, I'd be happy to explain each line of the JavaScript code:
+
+```javascript
+const cards = document.querySelectorAll('.card');
+```
+This line selects all the elements with the class name 'card' in the document and stores them in the `cards` variable. `querySelectorAll` returns a NodeList (which is like an array) of elements.
+
+```javascript
+cards.forEach(card => {
+```
+This line starts a `forEach` loop, which will execute the provided function once for each card element in the `cards` NodeList.
+
+```javascript
+    card.addEventListener('dblclick', () => {
+```
+This line adds an event listener to the current card in the loop. The event listener waits for a 'dblclick' event (which is a double click by the user). When a 'dblclick' event occurs, it executes the provided function.
+
+```javascript
+        const color = card.getAttribute('data-color');
+```
+This line gets the value of the 'data-color' attribute of the card and stores it in the `color` variable.
+
+```javascript
+        card.classList.add(color);
+```
+This line adds the value stored in the `color` variable to the list of classes of the card. This will change the color of the card because there are CSS rules defined for the 'blue', 'red', and 'green' classes.
+
+```javascript
+        card.setAttribute('data-color', 'used');
+```
+This line changes the value of the 'data-color' attribute of the card to 'used'.
+
+```javascript
+    });
+});
+```
+These lines close the function provided to the event listener and the function provided to the `forEach` loop, respectively.
+
+```javascript
+</script>
+```
+This line marks the end of the script tag in the HTML document. All JavaScript code should be written between the `<script>` and `</script>` tags. 
+
+I
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
