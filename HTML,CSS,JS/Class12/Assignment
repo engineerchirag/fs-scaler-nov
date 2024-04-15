@@ -416,3 +416,60 @@ This line closes the function provided to the 'DOMContentLoaded' event listener.
 I hope this helps! Let me know if you have any other questions. 😊
 
 
+
+
+<!DOCTYPE html>
+<html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="doubleHolder">
+        <button class="double">double</button>
+    </div>
+
+    <script>
+        // Write your JS program here =========
+        document.addEventListener('DOMContentLoaded' , (event) => {
+        function createButton () {
+        const btn = document.createElement('button');
+        btn.className = 'double';
+        btn.textContent = 'double';
+        btn.addEventListener ('click' , handleClick);
+        return btn;
+        }
+        function handleClick(event) {
+        const parent = event.target.parentNode;
+        parent.removeChild(event.target);
+
+        parent.appendChild(createButton());
+        parent.appendChild(createButton());
+        }
+
+        const doubleHolder = document.querySelector('#doubleHolder');
+
+        const button = doubleHolder.querySelector('.double');
+
+        button.addEventListener('click' , handleClick);
+        });
+    </script>
+</body>
+
+</html>
+
+
